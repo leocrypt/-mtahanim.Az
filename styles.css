@@ -9,6 +9,11 @@ body {
   background-color: white;
 }
 
+.DisplayNetice {
+  font-weight: bold;
+  padding-top: 20px;
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;

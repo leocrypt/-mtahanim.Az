@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="icon" href="https://cdn.dorik.com/630c4225284fd80011923935/637d086c5c39180011ac197a/images/Imtahanim.az1542-removebg-preview_xypvr7bh.png"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="twitter:card" content="summary_large_image"/><link rel="canonical" href="https://imtahanimaz.dorik.io/"/><script type="text/javascript"></script><link as="font" rel="preload" href="https://fonts.cmsfly.com/css?family=Epilogue-regular:400&display=swap"/><link rel="stylesheet" href="https://fonts.cmsfly.com/css?family=Epilogue-regular:400&display=swap"/><link rel="stylesheet" href="https://cdn.dorik.com/637d086c5c39180011ac197a/css/index.css?v=1670357225889"/><link rel="stylesheet" href="https://assets.dorik.io/shared/aos.css"/>
+    <link rel="stylesheet" href="styles.css" />
     
     
 </head>
@@ -34,8 +35,27 @@
 <li><span style="color: rgb(0,0,0);"><strong>Magistr </strong></span></li>
 <li><span style="color: rgb(0,0,0);"><strong>Müəllimlərin İşə Qəbul</strong>u</span></li>
 </ul>
-</div></div></div></div></div></div></section><section class="dorik-section dorik-section-plg8hbv0 " id="imtahan-neticesi"><div class="dorik-section-plg8hbv0-frame-corner dorik-frame-corner"></div><div class=""><div class="container dorik-row-qrd26i7x-wrapper    "><div class="dorik-row-qrd26i7x  flex  "><div class="col-lg-1/2 "><div class="column-inner dorik-column-d6el49uf  1/2"><div class="dorik-wrapper dorik-heading-npsjiu00-wrapper "><h1 class="dorik-heading dorik-heading-npsjiu00 "><span><p>Imtahan nəticəni öyrən.</p>
-</span></h1></div></div></div><div class="col-lg-2/5 "><div class="column-inner dorik-column-z03hsjoj  2/5"><form id="vm3cuxco" class="dorik-subscription-vm3cuxco "><div class="fields-wrapper"><div class="form-group"><label class="form-label">Ad:</label><input type="text" name="FNAME" class="form-control" placeholder=""/></div><div class="form-group"><label class="form-label">Soyad</label><input type="email" name="EMAIL" class="form-control" required="" placeholder=""/></div><div class="form-group"><label class="form-label">Istifadəçi kodu:</label><input type="text" name="LNAME" class="form-control" placeholder=""/></div><button type="submit"><span class="loader hidden"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;height:2em"><path fill="#fff" d="M73 50c0-12.7-10.3-23-23-23S27 37.3 27 50m3.9 0c0-10.5 8.5-19.1 19.1-19.1S69.1 39.5 69.1 50"><animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 50 50" to="360 50 50" repeatCount="indefinite"></animateTransform></path></svg></span><span class="button-content"><span>Yoxla</span></span></button></div><div class="forward--url" hidden="" data-forward-to="#"></div></form></div></div></div></div></div></section><section class="dorik-section dorik-section-w8ndn2zd "><div class=""><div class="container dorik-row-j8zwpu6r-wrapper    "><div class="dorik-row-j8zwpu6r  flex  "><div class="col-lg-4/7 "><div class="column-inner dorik-column-cu93xiyx  4/7"><div class="dorik-wrapper dorik-heading-69amipi4-wrapper "><h3 class="dorik-heading dorik-heading-69amipi4 "><span><p>Keçiriləcək imtahanlar</p>
+</div></div></div></div></div></div></section>
+<!-- Begin the form -->
+<script src="script.js"></script>
+<section class="dorik-section dorik-section-plg8hbv0 " id="imtahan-neticesi"><div class="dorik-section-plg8hbv0-frame-corner dorik-frame-corner"></div><div class=""><div class="container dorik-row-qrd26i7x-wrapper    "><div class="dorik-row-qrd26i7x  flex  "><div class="col-lg-1/2 "><div class="column-inner dorik-column-d6el49uf  1/2"><div class="dorik-wrapper dorik-heading-npsjiu00-wrapper "><h1 class="dorik-heading dorik-heading-npsjiu00 "><span><p>Imtahan nəticəni öyrən.</p></span></h1></div></div></div><div class="col-lg-2/5 "><div class="column-inner dorik-column-z03hsjoj  2/5">
+  
+  <form id="vm3cuxco" class="dorik-subscription-vm3cuxco "><div class="fields-wrapper">
+    <div class="form-group"><label class="form-label">Ad:</label><input type="text" name="fname" class="form-control" placeholder=""/></div>
+    <div class="form-group"><label class="form-label">Soyad</label><input type="text" name="lname" class="form-control"  placeholder=""/></div>
+    <div class="form-group"><label class="form-label">Istifadəçi kodu:</label><input type="text" name="studentId" class="form-control" placeholder=""/></div>
+    <div class="form-group"><label class="form-label">Sinifi seçin:</label><select id="ImtahanNovu" name="ImtahanNovu" class="form-control">
+    <option value="word">2-8 siniflər</option>
+    <option value="html">9-11 siniflər</option></select></div>
+    
+  <button onclick="displayCavab();"><span class="loader hidden"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;height:2em"><path fill="#fff" d="M73 50c0-12.7-10.3-23-23-23S27 37.3 27 50m3.9 0c0-10.5 8.5-19.1 19.1-19.1S69.1 39.5 69.1 50"><animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 50 50" to="360 50 50" repeatCount="indefinite"></animateTransform></path></svg></span><span class="button-content"><span>Nəticəni Yoxla</span></span></button><br />
+  <button onClick="window.location.reload();"><span class="loader hidden"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;height:2em"><path fill="#fff" d="M73 50c0-12.7-10.3-23-23-23S27 37.3 27 50m3.9 0c0-10.5 8.5-19.1 19.1-19.1S69.1 39.5 69.1 50"><animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 50 50" to="360 50 50" repeatCount="indefinite"></animateTransform></path></svg></span><span class="button-content"><span>Səhifəni yenilə</span></span></button></div>
+<div id="displayName" class="DisplayNetice">Nəticələr:</div>
+<div id="displayLink"></div>
+<!-- <div class="forward--url" hidden="" data-forward-to="#"></div> --></form></div></div></div></div></div></section>
+<!-- End of Form -->
+
+<section class="dorik-section dorik-section-w8ndn2zd "><div class=""><div class="container dorik-row-j8zwpu6r-wrapper    "><div class="dorik-row-j8zwpu6r  flex  "><div class="col-lg-4/7 "><div class="column-inner dorik-column-cu93xiyx  4/7"><div class="dorik-wrapper dorik-heading-69amipi4-wrapper "><h3 class="dorik-heading dorik-heading-69amipi4 "><span><p>Keçiriləcək imtahanlar</p>
 </span></h3></div></div></div></div></div></div><div class=""><div class="container dorik-row-3msaavls-wrapper    "><div class="dorik-row-3msaavls  flex  "><div class="col-lg-3/8 "><div class="column-inner dorik-column-jkkkw799  3/8"><div class="dorik-text dorik-text-efsaryym "><p>Az və Rus Bölməsi</p>
 </div><div class="dorik-wrapper dorik-heading-ylwy7lvf-wrapper "><h3 class="dorik-heading dorik-heading-ylwy7lvf "><span><p>5-9 siniflər üçün hədiyyəli sınaq imtahanı</p>
 </span></h3></div><div class="dorik-text dorik-text-5jao9ean "><p>Ünvan- Gəncə şəh. Azərittifaq.Alov Ticarət Mərkəzinin qarşısı. Merinos Xalçanın arxası.</p>
@@ -337,7 +357,7 @@ function collapse(navlist) {
                 error: function(error) {
                     var $div = $("<div>", {
                         class: "error-message",
-                        html: error.message || "Something went wrong! Check the fields"
+                        html: error.message || ""
                     });
                     $(that).append($div);
                 }
