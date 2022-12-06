@@ -31,7 +31,7 @@ function displayCavab() {
     $fileExtension +
     '')
 
-    /* document.getElementById('displayLink').innerHTML =
+    document.getElementById('displayLink').innerHTML =
       '<a href="http://www.imtahanim.az/cavablar/' +
       $ImtahanNovu +
       '/' +
@@ -42,6 +42,6 @@ function displayCavab() {
       $studentId +
       '.' +
       $fileExtension +
-      ' faylına keçid</a>'; */
+      ' faylına keçid</a>';
   }
 }
