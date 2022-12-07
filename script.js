@@ -15,7 +15,7 @@ function displayCavab() {
     .elements.namedItem('ImtahanNovu').value;
 
   if ($ImtahanNovu == 'word') {
-    $fileExtension = 'docx';
+    $fileExtension = 'doc';
   } else {
     $fileExtension = 'html';
   }
