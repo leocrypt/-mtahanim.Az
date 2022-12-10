@@ -16,25 +16,22 @@ function displayCavab() {
 
   if ($ImtahanNovu == 'word') {
     $fileExtension = 'doc';
-    $setLink = "https://view.officeapps.live.com/op/view.aspx?src=http://www.imtahanim.az/cavablar/";
-
+    $setLink =
+      'https://view.officeapps.live.com/op/view.aspx?src=http://www.imtahanim.az/cavablar/';
   } else {
     $fileExtension = 'pdf';
-    $setLink = "http://www.imtahanim.az/cavablar/";
+    $setLink = 'http://www.imtahanim.az/cavablar/';
   }
   if (!$studentId) {
-    alert ("Kodu daxil edin");
+    alert('Kodu daxil edin');
     /* document.getElementById('displayLink').innerHTML = 'Kodu daxil edin'; */
   } else {
-    window.open($setLink +
-    $ImtahanNovu +
-    '/' +
-    $studentId +
-    '.' +
-    $fileExtension +
-    '')
+    window.open(
+      $setLink + $ImtahanNovu + '/' + $studentId + '.' + $fileExtension
+    );
 
-    document.getElementById('displayLink').innerHTML = '<a href='+
+    document.getElementById('displayLink').innerHTML =
+      '<a href="' +
       $setLink +
       $ImtahanNovu +
       '/' +
